@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url(img1.jpg);
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      h1{
+        color: rgb(231, 235, 4);
+        text-decoration: underline;
+      }
+      .todo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        position: relative;
+        box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.15);
+        border: 5px solid #0f5bd4;
+        animation: slideIn 1s forwards;
+      }
+
+      .todo-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        animation: fadeIn 1s forwards;
+        font-size: 1rem;
+      }
+
+      .todo-value {
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        font-family: quicksand;
+        font-weight: bold;
+        flex-grow: 1;
+      }
+
+      .todo-item:has(.todo-checkbox:checked) {
+        color: #555555;
+        background: #eeeeee;
+        text-decoration: line-through;
+        order: 1;
+      }
+
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+      <h1>To-Do-List Project</h1>
+      <div class="todo-item">
+        <input
+          type="text"
+          class="todo-value"
+          placeholder="(empty)"
+          value="Take the bins out"
+        />
+        <input type="checkbox" name="" class="todo-checkbox" />
+      </div>
+      <div class="todo-item">
+        <input
+          type="text"
+          class="todo-value"
+          placeholder="(empty)"
+          value="Take the bins out"
+        />
+        <input type="checkbox" name="" class="todo-checkbox" />
+      </div>
+      <div class="todo-item">
+        <input
+          type="text"
+          class="todo-value"
+          placeholder="(empty)"
+          value="Take the bins out"
+        />
+        <input type="checkbox" name="" class="todo-checkbox" />
+      </div>
+      <div class="todo-item">
+        <input
+          type="text"
+          class="todo-value"
+          placeholder="(empty)"
+          value="Take the bins out"
+        />
+        <input type="checkbox" name="" class="todo-checkbox" />
+      </div>
+      <div class="todo-item">
+        <input
+          type="text"
+          class="todo-value"
+          placeholder="(empty)"
+          value="Take the bins out"
+        />
+        <input type="checkbox" name="" class="todo-checkbox" />
+      </div>
+      <div class="todo-item">
+        <input
+          type="text"
+          class="todo-value"
+          placeholder="(empty)"
+          value="Take the bins out"
+        />
+        <input type="checkbox" name="" class="todo-checkbox" />
+      </div>
+      <div class="todo-item">
+        <input
+          type="text"
+          class="todo-value"
+          placeholder="(empty)"
+          value="Take the bins out"
+        />
+        <input type="checkbox" name="" class="todo-checkbox" />
+      </div>
+    </div>
+</body>
+</html>
